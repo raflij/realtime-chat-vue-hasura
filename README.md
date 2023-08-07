@@ -1,8 +1,53 @@
-# Vue 3 + Vite
+# Full-stack realtime chat vue hasura
+- Real-time chat functionality using Hasura
+- Data: PostgeSQL managed by Supabase
+- Front-end: Vue + Vite, TailwindCSS
+- Hosting: Vercel (https://vercel.com/)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Install
+`npm install` to setup dependencies
 
-## Recommended IDE Setup
+## Supabase variables
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-# realtime-chat-vue-hasura
+Create a `.env` file with `VITE_GRAPHQL_HTTP_URI`, `VITE_GRAPHQL_WS_URI`, and `VITE_HASURA_ADMIN_SECRET` (see env.example)
+
+## Setup your Supabase project
+
+The following database table name 'messages' is required:
+
+| Field            | Type      |
+| ---------------- | --------- |
+| id               | BIGINT    |
+| user_id          | BIGINT    |      
+| username         | VARCHAR   |
+| color            | VARCHAR   |
+| message          | TEXT      |
+| room_id          | BIGINT    |
+| is_verified      | BOOLEAN   |
+| created_at       | timestamp |
+
+The following database table name 'users' is required:
+
+| Field            | Type      |
+| ---------------- | --------- |
+| id               | BIGINT    |
+| unique_id        | BIGINT    |      
+| username         | VARCHAR   |
+| is_verified      | BOOLEAN   |
+| color            | VARCHAR   |
+| created_at       | timestamp |
+
+## Dev
+
+`npm run dev` to run server on port 5173
+
+## Build
+
+`npm run build` to build the react client
+
+# Demo
+
+[https://realtime-chatapp2023.vercel.app](https://random-chat.netlify.app/)
+
+!['demo'](https://realtime-chatapp2023.vercel.app/demo1.png "Dekstop View")
+!['demo'](https://realtime-chatapp2023.vercel.app/demo2.jpg "Responsive Mobile View")
