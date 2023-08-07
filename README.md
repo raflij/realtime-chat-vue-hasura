@@ -7,11 +7,11 @@
 ## Install
 `npm install` to setup dependencies
 
-## Supabase variables
+## Hasura variables
 
 Create a `.env` file with `VITE_GRAPHQL_HTTP_URI`, `VITE_GRAPHQL_WS_URI`, and `VITE_HASURA_ADMIN_SECRET` (see env.example)
 
-## Setup your Supabase project
+## Setup your PostgreSQL project
 
 The following database table name 'messages' is required:
 
