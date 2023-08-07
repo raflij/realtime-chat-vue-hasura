@@ -2,7 +2,7 @@
 - Real-time chat functionality using Hasura
 - Data: PostgeSQL managed by Supabase
 - Front-end: Vue + Vite, TailwindCSS
-- Hosting: Vercel (https://vercel.com/)
+- Hosting: [Vercel](https://vercel.com/)
 
 ## Install
 `npm install` to setup dependencies
@@ -47,7 +47,7 @@ The following database table name 'users' is required:
 
 # Demo
 
-[https://realtime-chatapp2023.vercel.app](https://random-chat.netlify.app/)
+[https://realtime-chatapp2023.vercel.app/](https://realtime-chatapp2023.vercel.app/)
 
 !['demo'](https://realtime-chatapp2023.vercel.app/demo1.png "Dekstop View")
 !['demo'](https://realtime-chatapp2023.vercel.app/demo2.jpg "Responsive Mobile View")
