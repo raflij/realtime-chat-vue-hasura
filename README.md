@@ -43,7 +43,7 @@ The following database table name 'users' is required:
 
 ## Build
 
-`npm run build` to build the react client
+`npm run build` to build the vue client
 
 # Demo
 
